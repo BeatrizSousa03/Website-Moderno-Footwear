@@ -1,0 +1,16 @@
+h1.titulosobre{
+    margin-left:50px;
+}
+
+p.textosobre{
+    margin-left:50px;
+    font-family: arial;
+    width: 60%;
+}
+
+ul {
+    list-style-type: square;
+    font-family: Arial;
+    margin-left:50px;
+}
+

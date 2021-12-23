@@ -1,0 +1,16 @@
+a:focus, a:hover {
+    color: #23527c;
+    text-decoration: underline;
+    font-family: arial;
+}
+
+a.linkvideo{
+    font-family: arial;
+}
+
+.texto{
+    font-family: arial;
+    width: 50%;
+}
+
+

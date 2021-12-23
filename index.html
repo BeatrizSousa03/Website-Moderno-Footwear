@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/produtos.css" />
+    <link rel="stylesheet" href="css/slideshow.css" />
+    <link rel="stylesheet" href="css/botaotopo.css">
+    <link rel="stylesheet" href="css/video.css">
+    <link rel="stylesheet" href="css/tabela.css">
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/textosobre.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+    <title>Moderno Footwear | Loja Online</title>
+  </head>
+  <body>  
+    <!-- Início do Preloader -->
+    <div class="loader_bg">
+      <div class="loader"></div>
+    </div>
+
+    <script>
+        setTimeout(function(){
+            $('.loader_bg').fadeToggle();
+        }, 1500);
+    </script>
+    <!-- Fim do Preloader -->
+
+    <!-- Início da Navbar -->
+    <section>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <div class="col-lg-3">
+            <div class="header__logo">
+              <a href="./index.html"
+                ><img src="Imagens/logo.png" alt="logo"
+              /></a>
+            </div>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="produtos-hover" onclick="goToProducts()" aria-current="page">Produtos</a>
+              </li>
+              <li class="nav-item">                
+                <a class="nav-link" aria-current="page" href="dicas.html">Dicas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="sobre.html">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="contactos.html">Contactos</a>
+              </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- Fim da Navbar -->
+    <br />
+    <!-- Início do Slideshow -->
+    <section>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img src="Imagens/nike.jpg" style="width: 100%" />
+          <div class="text">Nike</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img src="Imagens/adidas.jpg" style="width: 100%" />
+          <div class="text">Adidas</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="Imagens/fila.jpg" style="width: 100%" />
+          <div class="text">Fila</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <img src="Imagens/fredperry.jpg" style="width: 100%" />
+          <div class="text">Fred Perry</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <img src="Imagens/converse.jpg" style="width: 100%" />
+          <div class="text">Converse</div>
+        </div>
+      </div>
+      <br />
+
+      <div style="text-align: center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+      <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {
+            slideIndex = 1;
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+          setTimeout(showSlides, 3000);
+        }
+      </script>
+    </section>
+    <!-- Fim do Slideshow -->
+    <br />
+    <br />
+    <h2 id="produtos"><center>Produtos</center></h2>
+    <p><center>_________________</center></p>
+    <br />
+    <!-- Início dos Produtos -->
+    <center>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img
+              src="Imagens/Sapatilhas/nikeblazermid.jpg"
+              alt="Nike Blazer Mid '77 EMB"
+              style="width: 100%"
+            />
+            <h1>Nike Blazer Mid '77 EMB</h1>
+            <p class="price">99,99€</p>
+            <p>Tamanho: 40</p>
+            <p><button id="primeiro" onclick="buyProduct('primeiro')">Comprar</button></p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img
+              src="Imagens/Sapatilhas/nikechallenger.jpg"
+              alt="Nike Challenger OG"
+              style="width: 100%"
+            />
+            <h1>Nike Challenger OG</h1>
+            <p class="price">84,99€</p>
+            <p>Tamanho 39</p>
+            <p><button id="segundo" onclick="buyProduct('segundo')">Comprar</button></p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img
+              src="Imagens/Sapatilhas/nikeairmax90.jpg"
+              alt="Nike Air Max 90 Premium"
+              style="width: 100%"
+            />
+            <h1>Nike Air Max 90 Premium</h1>
+            <p class="price">129,99€</p>
+            <p>Tamanho 41</p>
+            <p><button id="terceiro" onclick="buyProduct('terceiro')">Comprar</button></p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img
+              src="Imagens/Sapatilhas/nikeairforce1.jpg"
+              alt="Nike Air Force 1"
+              style="width: 100%"
+            />
+            <h1>Nike Air Force 1</h1>
+            <p class="price">84,99€</p>
+            <p>Tamanho 37</p>
+            <p><button id="quarto" onclick="buyProduct('quarto')">Comprar</button></p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img
+              src="Imagens/Sapatilhas/adidasstansmith.jpg"
+              alt="Adidas Stan Smith"
+              style="width: 100%"
+            />
+            <h1>Adidas Stan Smith</h1>
+            <p class="price">89,99€</p>
+            <p>Tamanho 43</p>
+            <p><button id="quinto" onclick="buyProduct('quinto')">Comprar</button></p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img
+              src="Imagens/Sapatilhas/adidasnmdr1.jpg"
+              alt="Adidas NMD_R1"
+              style="width: 100%"
+            />
+            <h1>Adidas NMD_R1</h1>
+            <p class="price">124,99€</p>
+            <p>Tamanho 40</p>
+            <p><button id="sexto" onclick="buyProduct('sexto')">Comprar</button></p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img
+              src="Imagens/Sapatilhas/adidasforumlow.jpg"
+              alt=""
+              style="width: 100%"
+            />
+            <h1>Adidas Forum Low</h1>
+            <p class="price">94,99€</p>
+            <p>Tamanho 38</p>
+            <p><button id="sétimo" onclick="buyProduct('sétimo')">Comprar</button></p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img
+              src="Imagens/Sapatilhas/filarenno.jpg"
+              alt="Fila Renno"
+              style="width: 100%"
+            />
+            <h1>Fila Renno</h1>
+            <p class="price">74,99€</p>
+            <p>Tamanho 42</p>
+            <p><button id="oitavo" onclick="buyProduct('oitavo')">Comprar</button></p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img
+              src="Imagens/Sapatilhas/fredperryspencer.jpg"
+              alt="Fred Perry Spencer"
+              style="width: 100%"
+            />
+            <h1>Fred Perry Spencer</h1>
+            <p class="price">109,99€</p>
+            <p>Tamanho 41</p>
+            <p><button id="nono" onclick="buyProduct('nono')">Comprar</button></p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img
+              src="Imagens/Sapatilhas/fredperryb722bonded.jpg"
+              alt="Fred Perry B722 Bonded"
+              style="width: 100%"
+            />
+            <h1>Fred Perry B722 Bonded</h1>
+            <p class="price">129,99€</p>
+            <p>Tamanho 42</p>
+            <p><button id="décimo" onclick="buyProduct('décimo')">Comprar</button></p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img
+              src="Imagens/Sapatilhas/fredperryb721.jpg"
+              alt="Fred Perry B721"
+              style="width: 100%"
+            />
+            <h1>Fred Perry B721</h1>
+            <p class="price">114,99€</p>
+            <p>Tamanho 40</p>
+            <p><button id="décimo primeiro" onclick="buyProduct('décimo primeiro')">Comprar</button></p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img
+              src="Imagens/Sapatilhas/conversechucktaylorallstar.jpg"
+              alt="Converse Chuck Taylor All Star"
+              style="width: 100%"
+            />
+            <h1>Converse Chuck Taylor</h1>
+            <p class="price">64,90€</p>
+            <p>Tamanho 39</p>
+            <p><button id="décimo segundo" onclick="buyProduct('décimo segundo')">Comprar</button></p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img
+              src="Imagens/Sapatilhas/converseproleatherhi.jpg"
+              alt="Converse Pro Leather Hi"
+              style="width: 100%"
+            />
+            <h1>Converse Pro Leather Hi</h1>
+            <p class="price">89,90€</p>
+            <p>Tamanho 40</p>
+            <p><button id="décimo terceiro" onclick="buyProduct('décimo terceiro')">Comprar</button></p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img
+              src="Imagens/Sapatilhas/conversestarplayerev.jpg"
+              alt="Converse Star Player EV"
+              style="width: 100%"
+            />
+            <h1>Converse Star Player EV</h1>
+            <p class="price">49,99€</p>
+            <p>Tamanho 38</p>
+            <p><button id="décimo quarto" onclick="buyProduct('décimo quarto')">Comprar</button></p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img
+              src="Imagens/Sapatilhas/converserchucktaylorallstarox.jpg"
+              alt="Converse Chuck Taylor All Star OX"
+              style="width: 100%"
+            />
+            <h1>Converse Chuck Taylor OX</h1>
+            <p class="price">64,90€</p>
+            <p>Tamanho 37</p>
+            <p><button id="décimo " onclick="buyProduct('nono')">Comprar</button></p>
+          </div>
+        </div>
+      </div>
+    </center>
+    <!-- Fim dos Produtos -->
+
+    <!-- Início do botão para ir para o topo da página  -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><p>&#8593</p></button>
+    <!-- Fim do botão para ir para o topo da página  -->
+  </body>
+</html>
+
+<script>
+
+var productElement = document.getElementById("produtos");
+
+
+  function goToProducts() {productElement.scrollIntoView();}
+
+  mybutton = document.getElementById("myBtn");
+
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0; 
+  }
+
+  function buyProduct(productID) {
+    if (document.getElementById(productID).innerHTML === 'Requisitou este produto') return
+    let email = prompt("E-mail: ")
+    if (email == null || (!email.endsWith(".com") && !email.endsWith(".pt")) || !email.includes("@")) {
+      alert("E-mail inválido")
+    } else {
+      alert("O seu pedido de compra foi recebido. Em menos de 24 horas irá receber um e-mail no qual deve submeter os seus dados. Obrigado pela sua escolha!")
+      document.getElementById(productID).innerHTML = "Requisitou este produto"
+      document.getElementById(productID).style.backgroundColor = "#ffbd4a"
+    }
+  }
+
+</script>
