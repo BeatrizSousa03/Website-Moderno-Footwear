@@ -4,13 +4,16 @@ a:focus, a:hover {
     font-family: arial;
 }
 
-a.linkvideo{
-    font-family: arial;
-}
-
 .texto{
     font-family: arial;
     width: 50%;
 }
 
+div.column2{
+    width: 50%;
+}
 
+a.descricao{
+    font-size: 20px;
+    font-family: arial;
+}

@@ -10,17 +10,37 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/produtos.css" />
     <link rel="stylesheet" href="css/slideshow.css" />
     <link rel="stylesheet" href="css/botaotopo.css">
+    <link rel="stylesheet" href="css/video.css">
+    <link rel="stylesheet" href="css/tabela.css">
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/textosobre.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/contactos.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
     <title>Moderno Footwear | Loja Online</title>
   </head>
-  <body>
+  <body>  
+    <!-- Início do Preloader -->
+    <div class="loader_bg">
+      <div class="loader"></div>
+    </div>
+
+    <script>
+        setTimeout(function(){
+            $('.loader_bg').fadeToggle();
+        }, 1500);
+    </script>
+    <!-- Fim do Preloader -->
+
     <!-- Início da Navbar -->
     <section>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -38,22 +58,19 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Início</a>
+                <a class="nav-link" aria-current="page" href="index.html">Início</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Produtos</a>
+                <a class="nav-link" aria-current="page" href="index.html#produtos">Produtos</a>
+              </li>
+              <li class="nav-item">                
+                <a class="nav-link" aria-current="page" href="dicas.html">Dicas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"></a>
+                <a class="nav-link" aria-current="page" href="sobre.html">Sobre</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Dicas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Sobre</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contactos</a>
+                <a class="nav-link active" aria-current="page" href="contactos.html">Contactos</a>
               </li>
               </ul>
           </div>
@@ -61,279 +78,120 @@
       </nav>
     </section>
     <!-- Fim da Navbar -->
-    <br />
-    <!-- Início do Slideshow -->
-    <section>
-      <div class="slideshow-container">
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 5</div>
-          <img src="Imagens/nike.jpg" style="width: 100%" />
-          <div class="text">Nike</div>
-        </div>
+    <h1 class=titulosobre>Contactos:</h1>
+    <p class=textocontacto>Beatriz Sousa</p>
+    <ul>
+      <li>
+          <p>Primeiro Ano - Licenciatura em Engenharia e Gestão Industrial</p>
+      </li>
+      <li>
+        <p>Nº de Estudante: 20210767</p>
+    </li>
+    <li>
+        <p>E-mail Pessoal: beatrizrrsousa@gmail.com</p>
+    </li>
+    <li>
+        <p>E-mail Institucional: up202107687@up.pt</p>
+    </li>
+    
+  </ul>
+  <br>
 
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 5</div>
-          <img src="Imagens/adidas.jpg" style="width: 100%" />
-          <div class="text">Adidas</div>
-        </div>
+  <div class="social-icons">
+  
+    <a href="https://github.com/BeatrizSousa03" target="_blank"><img src="Imagens/github.png" alt="GitHub Logo"></a>
+    <a href="https://pt-pt.facebook.com/" target="_blank"><img src="Imagens/facebook.png" alt="Facebook Logo"></a>
+    <a href="https://www.instagram.com/bia_sousa03/" target="_blank"><img src="Imagens/instagram.png" alt="Instagram Logo"></a>
+    <a href="https://twitter.com/?lang=pt" target="_blank"><img src="Imagens/twitter.png" alt="Twitter Logo"></a>
 
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 5</div>
-          <img src="Imagens/fila.jpg" style="width: 100%" />
-          <div class="text">Fila</div>
-        </div>
-        <div class="mySlides fade">
-          <div class="numbertext">4 / 5</div>
-          <img src="Imagens/fredperry.jpg" style="width: 100%" />
-          <div class="text">Fred Perry</div>
-        </div>
-        <div class="mySlides fade">
-          <div class="numbertext">5 / 5</div>
-          <img src="Imagens/converse.jpg" style="width: 100%" />
-          <div class="text">Converse</div>
-        </div>
-      </div>
-      <br />
+  </div>
 
-      <div style="text-align: center">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-      </div>
+  <br>
+  <h1 class=titulosobre>Links Úteis:</h1>
+  <ul>
+    <li>
+      <p><a href="https://sigarra.up.pt/feup/pt" target="_blank">https://sigarra.up.pt</a></p>
+    </li>
+    <li>
+      <p><a href="https://www.youtube.com/user/FEUPtv/videos" target="_blank">https://www.youtube.com/user/FEUPtv/videos</a></p>
+    </li>
+    <li>
+      <p><a href="https://code.visualstudio.com/download" target="_blank">https://code.visualstudio.com/download</a></p>
+  </li>
+  <li>
+    <p><a href="https://www.w3schools.com/" target="_blank">https://www.w3schools.com/</a></p>
+  </li>
+  <li>
+    <p><a href="https://www.canva.com/pt_pt/" target="_blank">https://www.canva.com/pt_pt/</a></p>
+  </li>
 
-      <script>
-        var slideIndex = 0;
-        showSlides();
+  
+</ul>
 
-        function showSlides() {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("dot");
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-          }
-          slideIndex++;
-          if (slideIndex > slides.length) {
-            slideIndex = 1;
-          }
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex - 1].style.display = "block";
-          dots[slideIndex - 1].className += " active";
-          setTimeout(showSlides, 4000);
-        }
-      </script>
-    </section>
-    <!-- Fim do Slideshow -->
-    <br />
-    <br />
-    <h2><center>Produtos</center></h2>
-    <p><center>_________________</center></p>
-    <br />
-    <!-- Início dos Produtos -->
-    <center>
-      <div class="row">
-        <div class="column">
-          <div class="card">
-            <img
-              src="Imagens/Sapatilhas/nikeblazermid.jpg"
-              alt="Nike Blazer Mid '77 EMB"
-              style="width: 100%"
-            />
-            <h1>Nike Blazer Mid '77 EMB</h1>
-            <p class="price">99.99€</p>
-            <p>Tamanho: 40</p>
-            <p><button>Comprar</button></p>
-          </div>
+      
+      
+   <!-- Início do Footer -->
+      <footer class="footer-distributed">
+
+        <div class="footer-left">
+  
+            <h1>Moderno Footwear</h1>
+  
+            <p class="footer-links">
+                <a href="index.html" class="link-1">Início</a>
+                
+                <a href="index.html">Produtos</a>
+            
+                <a href="dicas.html">Dicas</a>
+            
+                <a href="sobre.html">Sobre</a>
+                
+                <a href="contactos.html">Contactos</a>
+            </p>
+  
+            <p class="footer-company-name">Copyright © 2021 Beatriz Sousa - Todos os direitos reservados</p>
         </div>
-        <div class="column">
-          <div class="card">
-            <img
-              src="Imagens/Sapatilhas/nikechallenger.jpg"
-              alt="Nike Challenger OG"
-              style="width: 100%"
-            />
-            <h1>Nike Challenger OG</h1>
-            <p class="price">84.99€</p>
-            <p>Tamanho 39</p>
-            <p><button>Comprar</button></p>
-          </div>
+  
+        <div class="footer-center">
+  
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>4200-465 R. Dr. Roberto Frias</span> Porto, Portugal</p>
+            </div>
+  
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>920-956-755</p>
+            </div>
+  
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:beatrizrrsousa@gmail.com">beatrizrrsousa@gmail.com</a></p>
+            </div>
+  
         </div>
-        <div class="column">
-          <div class="card">
-            <img
-              src="Imagens/Sapatilhas/nikeairmax90.jpg"
-              alt="Nike Air Max 90 Premium"
-              style="width: 100%"
-            />
-            <h1>Nike Air Max 90 Premium</h1>
-            <p class="price">129.99€</p>
-            <p>Tamanho 41</p>
-            <p><button>Comprar</button></p>
-          </div>
+  
+        <div class="footer-right">
+          
+  
+            <p class="footer-company-about">
+                <span>Sobre a empresa</span>
+                Este site foi feito unicamente com fins escolares. As imagens utilizadas não são da autoria do criador.
+            </p>
+  
+            <div class="footer-icons">
+  
+                <a href="https://github.com/BeatrizSousa03" target="_blank"><img src="Imagens/github.png" alt="GitHub Logo"></a>
+                <a href="https://pt-pt.facebook.com/" target="_blank"><img src="Imagens/facebook.png" alt="Facebook Logo"></a>
+                <a href="https://www.instagram.com/bia_sousa03/" target="_blank"><img src="Imagens/instagram.png" alt=""></a>
+                <a href="https://twitter.com/?lang=pt" target="_blank"><img src="Imagens/twitter.png" alt=""></a>
+  
+            </div>
+  
         </div>
-        <div class="column">
-          <div class="card">
-            <img
-              src="Imagens/Sapatilhas/nikeairforce1.jpg"
-              alt="Nike Air Force 1"
-              style="width: 100%"
-            />
-            <h1>Nike Air Force 1</h1>
-            <p class="price">84.99€</p>
-            <p>Tamanho 37</p>
-            <p><button>Comprar</button></p>
-          </div>
-        </div>
-        <div class="column">
-          <div class="card">
-            <img
-              src="Imagens/Sapatilhas/adidasstansmith.jpg"
-              alt="Adidas Stan Smith"
-              style="width: 100%"
-            />
-            <h1>Adidas Stan Smith</h1>
-            <p class="price">89.99€</p>
-            <p>Tamanho 43</p>
-            <p><button>Comprar</button></p>
-          </div>
-        </div>
-        <div class="column">
-          <div class="card">
-            <img
-              src="Imagens/Sapatilhas/adidasnmdr1.jpg"
-              alt="Adidas NMD_R1"
-              style="width: 100%"
-            />
-            <h1>Adidas NMD_R1</h1>
-            <p class="price">124.99€</p>
-            <p>Tamanho 40</p>
-            <p><button>Comprar</button></p>
-          </div>
-        </div>
-        <div class="column">
-          <div class="card">
-            <img
-              src="Imagens/Sapatilhas/adidasforumlow.jpg"
-              alt=""
-              style="width: 100%"
-            />
-            <h1>Adidas Forum Low</h1>
-            <p class="price">94.99€</p>
-            <p>Tamanho 38</p>
-            <p><button>Comprar</button></p>
-          </div>
-        </div>
-        <div class="column">
-          <div class="card">
-            <img
-              src="Imagens/Sapatilhas/filarenno.jpg"
-              alt="Fila Renno"
-              style="width: 100%"
-            />
-            <h1>Fila Renno</h1>
-            <p class="price">74.99€</p>
-            <p>Tamanho 42</p>
-            <p><button>Comprar</button></p>
-          </div>
-        </div>
-        <div class="column">
-          <div class="card">
-            <img
-              src="Imagens/Sapatilhas/fredperryspencer.jpg"
-              alt="Fred Perry Spencer"
-              style="width: 100%"
-            />
-            <h1>Fred Perry Spencer</h1>
-            <p class="price">109.99€</p>
-            <p>Tamanho 41</p>
-            <p><button>Comprar</button></p>
-          </div>
-        </div>
-        <div class="column">
-          <div class="card">
-            <img
-              src="Imagens/Sapatilhas/fredperryb722bonded.jpg"
-              alt="Fred Perry B722 Bonded"
-              style="width: 100%"
-            />
-            <h1>Fred Perry B722 Bonded</h1>
-            <p class="price">129.99€</p>
-            <p>Tamanho 42</p>
-            <p><button>Comprar</button></p>
-          </div>
-        </div>
-        <div class="column">
-          <div class="card">
-            <img
-              src="Imagens/Sapatilhas/fredperryb721.jpg"
-              alt="Fred Perry B721"
-              style="width: 100%"
-            />
-            <h1>Fred Perry B721</h1>
-            <p class="price">114.99€</p>
-            <p>Tamanho 40</p>
-            <p><button>Comprar</button></p>
-          </div>
-        </div>
-        <div class="column">
-          <div class="card">
-            <img
-              src="Imagens/Sapatilhas/conversechucktaylorallstar.jpg"
-              alt="Converse Chuck Taylor All Star"
-              style="width: 100%"
-            />
-            <h1>Converse Chuck Taylor</h1>
-            <p class="price">64.90€</p>
-            <p>Tamanho 39</p>
-            <p><button>Comprar</button></p>
-          </div>
-        </div>
-        <div class="column">
-          <div class="card">
-            <img
-              src="Imagens/Sapatilhas/converseproleatherhi.jpg"
-              alt="Converse Pro Leather Hi"
-              style="width: 100%"
-            />
-            <h1>Converse Pro Leather Hi</h1>
-            <p class="price">89.90€</p>
-            <p>Tamanho 40</p>
-            <p><button>Comprar</button></p>
-          </div>
-        </div>
-        <div class="column">
-          <div class="card">
-            <img
-              src="Imagens/Sapatilhas/conversestarplayerev.jpg"
-              alt="Converse Star Player EV"
-              style="width: 100%"
-            />
-            <h1>Converse Star Player EV</h1>
-            <p class="price">49.99€</p>
-            <p>Tamanho 38</p>
-            <p><button>Comprar</button></p>
-          </div>
-        </div>
-        <div class="column">
-          <div class="card">
-            <img
-              src="Imagens/Sapatilhas/converserchucktaylorallstarox.jpg"
-              alt="Converse Chuck Taylor All Star OX"
-              style="width: 100%"
-            />
-            <h1>Converse Chuck Taylor OX</h1>
-            <p class="price">64.90€</p>
-            <p>Tamanho 37</p>
-            <p><button>Comprar</button></p>
-          </div>
-        </div>
-      </div>
-    </center>
-    <!-- Fim dos Produtos -->
+  
+    </footer>
+    <!-- Fim do Footer -->
 
     <!-- Início do botão para ir para o topo da página  -->
     <button onclick="topFunction()" id="myBtn" title="Go to top"><p>&#8593</p></button>
@@ -342,6 +200,12 @@
 </html>
 
 <script>
+
+var productElement = document.getElementById("produtos");
+
+
+  function goToProducts() {productElement.scrollIntoView();}
+
   mybutton = document.getElementById("myBtn");
 
   window.onscroll = function () {
@@ -363,4 +227,17 @@
     document.body.scrollTop = 0; 
     document.documentElement.scrollTop = 0; 
   }
+
+  function buyProduct(productID) {
+    if (document.getElementById(productID).innerHTML === 'Requisitou este produto') return
+    let email = prompt("E-mail: ")
+    if (email == null || (!email.endsWith(".com") && !email.endsWith(".pt")) || !email.includes("@")) {
+      alert("E-mail inválido")
+    } else {
+      alert("O seu pedido de compra foi recebido. Em menos de 24 horas irá receber um e-mail no qual deve submeter os seus dados. Obrigado pela sua escolha!")
+      document.getElementById(productID).innerHTML = "Requisitou este produto"
+      document.getElementById(productID).style.backgroundColor = "#ffbd4a"
+    }
+  }
+
 </script>

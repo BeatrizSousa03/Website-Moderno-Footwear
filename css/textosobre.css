@@ -14,3 +14,15 @@ ul {
     margin-left:50px;
 }
 
+div.column{
+    width: 50%;
+}
+
+img.logobstrong{
+    margin-left:325px;
+    margin-top:25px;
+}
+
+p.textosobre{
+    width: 600px;
+}

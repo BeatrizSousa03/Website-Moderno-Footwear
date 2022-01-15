@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="css/tabela.css">
     <link rel="stylesheet" href="css/preloader.css">
     <link rel="stylesheet" href="css/textosobre.css">
+    <link rel="stylesheet" href="css/contactos.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
@@ -58,7 +60,7 @@
                 <a class="nav-link active" aria-current="page" href="index.html">Início</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="produtos-hover" onclick="goToProducts()" aria-current="page">Produtos</a>
+                <a class="nav-link" id="produtos-hover" href="#produtos" aria-current="page">Produtos</a>
               </li>
               <li class="nav-item">                
                 <a class="nav-link" aria-current="page" href="dicas.html">Dicas</a>
@@ -150,7 +152,7 @@
     <!-- Início dos Produtos -->
     <center>
       <div class="row">
-        <div class="column">
+        <div class="column4">
           <div class="card">
             <img
               src="Imagens/Sapatilhas/nikeblazermid.jpg"
@@ -163,7 +165,7 @@
             <p><button id="primeiro" onclick="buyProduct('primeiro')">Comprar</button></p>
           </div>
         </div>
-        <div class="column">
+        <div class="column4">
           <div class="card">
             <img
               src="Imagens/Sapatilhas/nikechallenger.jpg"
@@ -176,7 +178,7 @@
             <p><button id="segundo" onclick="buyProduct('segundo')">Comprar</button></p>
           </div>
         </div>
-        <div class="column">
+        <div class="column4">
           <div class="card">
             <img
               src="Imagens/Sapatilhas/nikeairmax90.jpg"
@@ -189,7 +191,7 @@
             <p><button id="terceiro" onclick="buyProduct('terceiro')">Comprar</button></p>
           </div>
         </div>
-        <div class="column">
+        <div class="column4">
           <div class="card">
             <img
               src="Imagens/Sapatilhas/nikeairforce1.jpg"
@@ -202,7 +204,7 @@
             <p><button id="quarto" onclick="buyProduct('quarto')">Comprar</button></p>
           </div>
         </div>
-        <div class="column">
+        <div class="column4">
           <div class="card">
             <img
               src="Imagens/Sapatilhas/adidasstansmith.jpg"
@@ -215,7 +217,7 @@
             <p><button id="quinto" onclick="buyProduct('quinto')">Comprar</button></p>
           </div>
         </div>
-        <div class="column">
+        <div class="column4">
           <div class="card">
             <img
               src="Imagens/Sapatilhas/adidasnmdr1.jpg"
@@ -228,7 +230,7 @@
             <p><button id="sexto" onclick="buyProduct('sexto')">Comprar</button></p>
           </div>
         </div>
-        <div class="column">
+        <div class="column4">
           <div class="card">
             <img
               src="Imagens/Sapatilhas/adidasforumlow.jpg"
@@ -241,7 +243,7 @@
             <p><button id="sétimo" onclick="buyProduct('sétimo')">Comprar</button></p>
           </div>
         </div>
-        <div class="column">
+        <div class="column4">
           <div class="card">
             <img
               src="Imagens/Sapatilhas/filarenno.jpg"
@@ -254,7 +256,7 @@
             <p><button id="oitavo" onclick="buyProduct('oitavo')">Comprar</button></p>
           </div>
         </div>
-        <div class="column">
+        <div class="column4">
           <div class="card">
             <img
               src="Imagens/Sapatilhas/fredperryspencer.jpg"
@@ -267,7 +269,7 @@
             <p><button id="nono" onclick="buyProduct('nono')">Comprar</button></p>
           </div>
         </div>
-        <div class="column">
+        <div class="column4">
           <div class="card">
             <img
               src="Imagens/Sapatilhas/fredperryb722bonded.jpg"
@@ -280,7 +282,7 @@
             <p><button id="décimo" onclick="buyProduct('décimo')">Comprar</button></p>
           </div>
         </div>
-        <div class="column">
+        <div class="column4">
           <div class="card">
             <img
               src="Imagens/Sapatilhas/fredperryb721.jpg"
@@ -293,7 +295,7 @@
             <p><button id="décimo primeiro" onclick="buyProduct('décimo primeiro')">Comprar</button></p>
           </div>
         </div>
-        <div class="column">
+        <div class="column4">
           <div class="card">
             <img
               src="Imagens/Sapatilhas/conversechucktaylorallstar.jpg"
@@ -306,7 +308,7 @@
             <p><button id="décimo segundo" onclick="buyProduct('décimo segundo')">Comprar</button></p>
           </div>
         </div>
-        <div class="column">
+        <div class="column4">
           <div class="card">
             <img
               src="Imagens/Sapatilhas/converseproleatherhi.jpg"
@@ -319,7 +321,7 @@
             <p><button id="décimo terceiro" onclick="buyProduct('décimo terceiro')">Comprar</button></p>
           </div>
         </div>
-        <div class="column">
+        <div class="column4">
           <div class="card">
             <img
               src="Imagens/Sapatilhas/conversestarplayerev.jpg"
@@ -332,7 +334,7 @@
             <p><button id="décimo quarto" onclick="buyProduct('décimo quarto')">Comprar</button></p>
           </div>
         </div>
-        <div class="column">
+        <div class="column4">
           <div class="card">
             <img
               src="Imagens/Sapatilhas/converserchucktaylorallstarox.jpg"
@@ -342,12 +344,74 @@
             <h1>Converse Chuck Taylor OX</h1>
             <p class="price">64,90€</p>
             <p>Tamanho 37</p>
-            <p><button id="décimo " onclick="buyProduct('nono')">Comprar</button></p>
+            <p><button id="décimo quinto" onclick="buyProduct('décimo quinto')">Comprar</button></p>
           </div>
         </div>
       </div>
     </center>
     <!-- Fim dos Produtos -->
+
+      <!-- Início do Footer -->
+      <footer class="footer-distributed">
+
+        <div class="footer-left">
+  
+            <h1>Moderno Footwear</h1>
+  
+            <p class="footer-links">
+                <a href="index.html" class="link-1">Início</a>
+                
+                <a href="index.html">Produtos</a>
+            
+                <a href="dicas.html">Dicas</a>
+            
+                <a href="sobre.html">Sobre</a>
+                
+                <a href="contactos.html">Contactos</a>
+            </p>
+  
+            <p class="footer-company-name">Copyright © 2021 Beatriz Sousa - Todos os direitos reservados</p>
+        </div>
+  
+        <div class="footer-center">
+  
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>4200-465 R. Dr. Roberto Frias</span> Porto, Portugal</p>
+            </div>
+  
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>920-956-755</p>
+            </div>
+  
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:beatrizrrsousa@gmail.com">beatrizrrsousa@gmail.com</a></p>
+            </div>
+  
+        </div>
+  
+        <div class="footer-right">
+  
+            <p class="footer-company-about">
+                <span>Sobre a empresa</span>
+                Este site foi feito unicamente com fins escolares. As imagens utilizadas não são da autoria do criador.
+            </p>
+  
+            <div class="footer-icons">
+  
+                <a href="https://github.com/BeatrizSousa03" target="_blank"><img src="Imagens/github.png" alt="GitHub Logo"></a>
+                <a href="https://pt-pt.facebook.com/" target="_blank"><img src="Imagens/facebook.png" alt="Facebook Logo"></a>
+                <a href="https://www.instagram.com/bia_sousa03/" target="_blank"><img src="Imagens/instagram.png" alt=""></a>
+                <a href="https://twitter.com/?lang=pt" target="_blank"><img src="Imagens/twitter.png" alt=""></a>
+  
+            </div>
+  
+        </div>
+  
+    </footer>
+    <!-- Fim do Footer -->
 
     <!-- Início do botão para ir para o topo da página  -->
     <button onclick="topFunction()" id="myBtn" title="Go to top"><p>&#8593</p></button>
@@ -356,12 +420,6 @@
 </html>
 
 <script>
-
-var productElement = document.getElementById("produtos");
-
-
-  function goToProducts() {productElement.scrollIntoView();}
-
   mybutton = document.getElementById("myBtn");
 
   window.onscroll = function () {
@@ -386,7 +444,7 @@ var productElement = document.getElementById("produtos");
 
   function buyProduct(productID) {
     if (document.getElementById(productID).innerHTML === 'Requisitou este produto') return
-    let email = prompt("E-mail: ")
+    let email = prompt("Insira o e-mail que pretende associar à compra: ")
     if (email == null || (!email.endsWith(".com") && !email.endsWith(".pt")) || !email.includes("@")) {
       alert("E-mail inválido")
     } else {
